@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <script src="funciones.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img src="images/icono.png">
+            <ul>
+                <li><a>HOME</a></li>
+                <li>GALLERY</li>
+                <li>WHERE</li>
+                <li><a href="#formulario">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <section class="child1">
+            <section class="child2">¡¡¡ULTIMAS PLAZAS!!!</section>
+        </section>
+
+        <section class="child3">
+            <img src="images/icono_teleoperador.jpg">
+            CONSULTA TAMBIEN SALIDAS PARA
+            <strong>PUENTES, NAVIDAD, FIN DE AÑO Y REYES</strong>
+
+        </section>
+        <section class="financiacion">
+            <strong>Financia</strong> tus <strong>viajes</strong> en <strong>WEB | AGENCIA | TELÉFONO</strong>
+            Financiación ofrecida por Financiera.
+        </section>
+
+    </main>
+    <section class="informacion_vuelo">
+        <section class="imagen1"><img src="images/vuelos-baratos.jpg"></section>
+        <section class="imagen2"><img src="images/vuelos-ninguna-parte-alternativa-viajes-tiempos-pandemi.jpg">
+        </section>
+        <section class="imagen3"><img src="images/broker-del-puerto-aeronavegacion.png"></section>
+    </section>
+
+    <section class="formulario" id="formulario">
+        <form method="" action="">
+            <legend>Formulario</legend>
+            <label>Nombre:</label>
+            <input class="name" name="name" id="name" placeholder="Nombre" type="text">
+
+            <p></p><label>Apellidos:</label>
+            <input class="apellidos" name="apellidos" id="apellidos" placeholder="Apellidos" type="text">
+
+            <p></p><label>Telefono:</label>
+            <input class="telefono" name="telefono" id="telefono" placeholder="Telefono" type="text">
+            <p></p><label>Selector de Pais:</label>
+            <select id="paises">
+
+                <option value="">--------</option>
+                <option value="España">España</option>
+                <option value="Canarias">Canarias</option>
+                <option value="Mallorca">Mallorca</option>
+                <option value="Galicia">Galicia</option>
+
+            </select>
+            <p></p><label>Mensaje:</label>
+
+            <textarea class="field" name="field" id="field"></textarea>
+
+            <p></p><button type="button" class="btn-green" onclick="enviarDatos()">Enviar</button>
+            <button type="reset" class="btn-red">Borrar</button>
+
+        </form>
+
+        <section class="formu-acces">
+            <form>
+                <legend>Formulario Acceso Datos</legend>
+
+                <label>Selector de Pais:</label>
+                <select id="selectPais">
+
+                    <option value="">--------</option>
+                    <option value="España">España</option>
+                    <option value="Canarias">Canarias</option>
+                    <option value="Mallorca">Mallorca</option>
+                    <option value="Galicia">Galicia</option>
+
+                </select>
+
+                <p></p><button type="button" class="btn-green" onclick="consultarDatos()">Consultar</button>
+                <button type="reset" class="btn-red">Borrar</button>
+
+            </form>
+        </section>
+
+    </section>
+    <section class="sectionFooter">
+        <footer>@Copyright David Rodriguez Ruiz</footer>
+    </section>
+
+</body>
+
+</html>
