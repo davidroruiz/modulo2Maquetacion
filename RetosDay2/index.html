@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="funciones.js"></script>
+    <title>Agencias de Viajes</title>
+</head>
+
+<body>
+
+    <main>
+        <section class="portada">
+            <article class="portPrincipial">
+                <h1>¡¡¡La Mejor Agencia del Pais!!!</h1>
+            </article>
+            <img src="https://www.epos-ett.com/wp-content/uploads/2018/07/motivate-en-verano.jpg">
+
+        </section>
+        <section class="informaccion_vuelo">
+
+            <article>
+
+                <h1>Contactanos</h1>
+                <p>Te atendemos por Whatsapp, teléfono o e-mail, cuando tú quieras.</p>
+            </article>
+            <article>
+                <h1>Viaje a medida</h1>
+                <p>Hacemos en realidad el vieaje</p>
+            </article>
+            <article>
+                <h1>Mejor Precio</h1>
+                <p>Te ofrecemos los mejores precios. Busca y compara.</p>
+            </article>
+
+        </section>
+        <section class="pagina-principal">
+
+
+            <form class="formulario" onsubmit="return false">
+                <legend>Formulario</legend>
+                <label>Nombre:</label>
+                <input class="name" name="name" id="name" placeholder="Nombre" type="text">
+
+                <label>Apellidos:</label>
+                <input class="apellidos" name="apellidos" id="apellidos" placeholder="Apellidos" type="text">
+
+                <label>Telefono:</label>
+                <input class="telefono" name="telefono" id="telefono" placeholder="Telefono" type="text">
+                <label>Selector de Pais:</label>
+                <select id="paises">
+
+                    <option value="">--------</option>
+                    <option value="España">España</option>
+                    <option value="Canarias">Canarias</option>
+                    <option value="Mallorca">Mallorca</option>
+                    <option value="Galicia">Galicia</option>
+
+                </select>
+                <label>Mensaje:</label>
+
+                <textarea class="field" name="field" id="field"></textarea>
+
+                <button type="submit" class="btn-green" onclick="enviarDatos()">Enviar</button>
+                <button type="reset" class="btn-red">Borrar</button>
+
+            </form>
+
+            <form class="formulario-acceso" onsubmit="return false">
+                <legend>Formulario Acceso a Datos</legend>
+
+                <label>Selector de Pais:</label>
+                <select id="selectPais">
+
+                    <option value="">--------</option>
+                    <option value="España">España</option>
+                    <option value="Canarias">Canarias</option>
+                    <option value="Mallorca">Mallorca</option>
+                    <option value="Galicia">Galicia</option>
+
+                </select>
+
+                <button type="submit" class="btn-green" onclick="consultarDatos()">Consultar</button>
+                <button type="reset" class="btn-red">Borrar</button>
+
+            </form>
+        </section>
+    </main>
+    </section>
+    <footer>@Copyright David Rodriguez Ruiz</footer>
+</body>
+
+</html>
